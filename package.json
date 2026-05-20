@@ -1,14 +1,20 @@
 {
   "name": "minimal-repro-chromatic-playwright",
   "private": true,
-  "pœackageManager": "pnpm@10.33.4",
+  "packageManager": "pnpm@10.33.4",
   "scripts": {
-    "test": "playwright test"
+    "chromatic": "chromatic --playwright",
+    "test": "playwright test",
+    "test:devex": "playwright test --project=devex-repro"
   },
   "devDependencies": {
     "@chromatic-com/playwright": "0.14.0",
     "@playwright/test": "1.60.0",
+    "@types/node": "22.15.0",
+    "chromatic": "16.0.0",
+    "dotenv": "16.4.7",
     "playwright": "1.60.0",
+    "typescript": "5.8.3",
     "vite": "8.0.13"
   }
 }
